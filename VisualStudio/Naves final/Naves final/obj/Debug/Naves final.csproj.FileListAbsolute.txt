@@ -1,0 +1,6 @@
+D:\ProyectosVisualStudio\Naves final\Naves final\bin\Debug\Naves final.exe.config
+D:\ProyectosVisualStudio\Naves final\Naves final\bin\Debug\Naves final.exe
+D:\ProyectosVisualStudio\Naves final\Naves final\bin\Debug\Naves final.pdb
+D:\ProyectosVisualStudio\Naves final\Naves final\obj\Debug\Naves final.csprojResolveAssemblyReference.cache
+D:\ProyectosVisualStudio\Naves final\Naves final\obj\Debug\Naves final.exe
+D:\ProyectosVisualStudio\Naves final\Naves final\obj\Debug\Naves final.pdb

@@ -1,0 +1,6 @@
+D:\ProyectosVisualStudio\Numero Al Revés\Numero Al Revés\bin\Debug\Numero Al Revés.exe.config
+D:\ProyectosVisualStudio\Numero Al Revés\Numero Al Revés\obj\Debug\Numero Al Revés.csprojResolveAssemblyReference.cache
+D:\ProyectosVisualStudio\Numero Al Revés\Numero Al Revés\bin\Debug\Numero Al Revés.exe
+D:\ProyectosVisualStudio\Numero Al Revés\Numero Al Revés\bin\Debug\Numero Al Revés.pdb
+D:\ProyectosVisualStudio\Numero Al Revés\Numero Al Revés\obj\Debug\Numero Al Revés.exe
+D:\ProyectosVisualStudio\Numero Al Revés\Numero Al Revés\obj\Debug\Numero Al Revés.pdb

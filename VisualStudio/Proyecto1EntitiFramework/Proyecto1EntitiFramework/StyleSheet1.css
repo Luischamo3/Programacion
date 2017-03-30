@@ -1,0 +1,21 @@
+﻿body {
+    font-family: sans-serif;
+    background-color: teal;
+}
+
+
+.Contenedor {
+    padding: 5px;
+    width: 50%;
+  
+}
+
+ .Contenedor button {
+   padding: .2em;
+   
+    
+}
+
+.Contenedor label {
+    
+}

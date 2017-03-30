@@ -1,0 +1,6 @@
+D:\ProyectosVisualStudio\Programa menú\Programa menú\bin\Debug\Programa menú.exe.config
+D:\ProyectosVisualStudio\Programa menú\Programa menú\bin\Debug\Programa menú.exe
+D:\ProyectosVisualStudio\Programa menú\Programa menú\bin\Debug\Programa menú.pdb
+D:\ProyectosVisualStudio\Programa menú\Programa menú\obj\Debug\Programa menú.csprojResolveAssemblyReference.cache
+D:\ProyectosVisualStudio\Programa menú\Programa menú\obj\Debug\Programa menú.exe
+D:\ProyectosVisualStudio\Programa menú\Programa menú\obj\Debug\Programa menú.pdb

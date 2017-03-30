@@ -1,0 +1,6 @@
+D:\ProyectosVisualStudio\Practicar Mover Punto\Practicar Mover Punto\bin\Debug\Practicar Mover Punto.exe.config
+D:\ProyectosVisualStudio\Practicar Mover Punto\Practicar Mover Punto\bin\Debug\Practicar Mover Punto.exe
+D:\ProyectosVisualStudio\Practicar Mover Punto\Practicar Mover Punto\bin\Debug\Practicar Mover Punto.pdb
+D:\ProyectosVisualStudio\Practicar Mover Punto\Practicar Mover Punto\obj\Debug\Practicar Mover Punto.csprojResolveAssemblyReference.cache
+D:\ProyectosVisualStudio\Practicar Mover Punto\Practicar Mover Punto\obj\Debug\Practicar Mover Punto.exe
+D:\ProyectosVisualStudio\Practicar Mover Punto\Practicar Mover Punto\obj\Debug\Practicar Mover Punto.pdb

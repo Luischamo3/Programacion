@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>3rayaWin</name>
+    </assembly>
+    <members>
+        <member name="T:_3rayaWin.Form1">
+            <summary>
+            Creación de la tabladebotones y variables que utilizamos
+            </summary>
+        </member>
+        <member name="M:_3rayaWin.Form1.Crea">
+            <summary>
+            Creación de la tabla de botones
+            </summary>
+        </member>
+        <member name="M:_3rayaWin.Form1.Button_Click(System.Object,System.EventArgs)">
+            <summary>
+            Función que contiene lo que pasará cuando hagamos 
+            click sobre cada casilla y escribe cada caracter 
+            en la tabla de botones llamando a la as funciones de la clase 
+            juego además de mostras los mensajes de victoria , empate o derrota
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:_3rayaWin.Form1.reset_Click(System.Object,System.EventArgs)">
+            <summary>
+            Función que resetea la tabla de botones habilitando 
+            los botones nuevamente una vez finalize la partida
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:_3rayaWin.Form1.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:_3rayaWin.Form1.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:_3rayaWin.Form1.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:_3rayaWin.devolucion">
+            <summary>
+            Estructura que contiene todas las variables que necesitamos en la clase
+            </summary>
+        </member>
+        <member name="T:_3rayaWin.juego">
+            <summary>
+            Clase que se encarga de toda la mecánica del juego es decir los movimiento de la máquina y jugador
+            </summary>
+        </member>
+        <member name="M:_3rayaWin.juego.movimientojugador(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Función se encarga de que el jugador pueda escribir su caracter.
+            </summary>
+            <param name="fila"></param>
+            <param name="columna"></param>
+            <param name="turno"></param>
+        </member>
+        <member name="M:_3rayaWin.juego.reset">
+            <summary>
+            Con esta función reseteamos el juego al ganar para poder reiniciar la partida
+            </summary>
+        </member>
+        <member name="M:_3rayaWin.juego.checkwinner">
+            <summary>
+            Función que detecta si el jugador o la máquina alguna de las 
+            combinaciones necesarias para poder ganar reuniendo  los tres caracteres seguidos        
+            </summary>
+        </member>
+        <member name="M:_3rayaWin.juego.jugadaganadora">
+            <summary>
+            Función que hace que la máquina busque la posibilidad de ganar al usuario.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:_3rayaWin.juego.noperder">
+            <summary>
+            Función que se activa si la máquina no puede ganaar evitando que el jugador lo haga
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:_3rayaWin.juego.jugadaaleatoria">
+            <summary>
+            Función que busca una posición aleatoria entre los espacios libre
+             para que juege la primera vez la máquina.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:_3rayaWin.juego.movimientomaquina">
+            <summary>
+            El movimiento máquina lo utilizamos para llamarlo desde 
+            el form llamando y a la vez este llama a jugada ganadora y checkwinner
+            </summary>
+        </member>
+        <member name="M:_3rayaWin.Program.Main">
+            <summary>
+            Punto de entrada principal para la aplicación.
+            </summary>
+        </member>
+        <member name="T:_3rayaWin.Properties.Resources">
+            <summary>
+              Clase de recurso fuertemente tipado para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:_3rayaWin.Properties.Resources.ResourceManager">
+            <summary>
+              Devuelve la instancia ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:_3rayaWin.Properties.Resources.Culture">
+            <summary>
+              Invalida la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos usando esta clase de recursos fuertemente tipados.
+            </summary>
+        </member>
+    </members>
+</doc>

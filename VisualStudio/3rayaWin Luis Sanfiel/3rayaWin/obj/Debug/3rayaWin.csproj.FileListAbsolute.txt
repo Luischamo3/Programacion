@@ -1,0 +1,37 @@
+D:\ProyectosVisualStudio\3rayaWin\3rayaWin\bin\Debug\3rayaWin.exe.config
+D:\ProyectosVisualStudio\3rayaWin\3rayaWin\bin\Debug\3rayaWin.exe
+D:\ProyectosVisualStudio\3rayaWin\3rayaWin\bin\Debug\3rayaWin.pdb
+D:\ProyectosVisualStudio\3rayaWin\3rayaWin\obj\Debug\3rayaWin.csprojResolveAssemblyReference.cache
+D:\ProyectosVisualStudio\3rayaWin\3rayaWin\obj\Debug\_3rayaWin.Form1.resources
+D:\ProyectosVisualStudio\3rayaWin\3rayaWin\obj\Debug\_3rayaWin.Properties.Resources.resources
+D:\ProyectosVisualStudio\3rayaWin\3rayaWin\obj\Debug\3rayaWin.csproj.GenerateResource.Cache
+D:\ProyectosVisualStudio\3rayaWin\3rayaWin\obj\Debug\3rayaWin.exe
+D:\ProyectosVisualStudio\3rayaWin\3rayaWin\obj\Debug\3rayaWin.pdb
+A:\Git\3rayaWin Luis Sanfiel\3rayaWin\bin\Debug\3rayaWin.exe.config
+A:\Git\3rayaWin Luis Sanfiel\3rayaWin\bin\Debug\3rayaWin.exe
+A:\Git\3rayaWin Luis Sanfiel\3rayaWin\bin\Debug\3rayaWin.pdb
+A:\Git\3rayaWin Luis Sanfiel\3rayaWin\obj\Debug\3rayaWin.csprojResolveAssemblyReference.cache
+A:\Git\3rayaWin Luis Sanfiel\3rayaWin\obj\Debug\_3rayaWin.Form1.resources
+A:\Git\3rayaWin Luis Sanfiel\3rayaWin\obj\Debug\_3rayaWin.Properties.Resources.resources
+A:\Git\3rayaWin Luis Sanfiel\3rayaWin\obj\Debug\3rayaWin.csproj.GenerateResource.Cache
+A:\Git\3rayaWin Luis Sanfiel\3rayaWin\obj\Debug\3rayaWin.exe
+A:\Git\3rayaWin Luis Sanfiel\3rayaWin\obj\Debug\3rayaWin.pdb
+C:\Users\usuario\Desktop\3rayaWin Luis Sanfiel_editado\3rayaWin\bin\Debug\3rayaWin.exe.config
+C:\Users\usuario\Desktop\3rayaWin Luis Sanfiel_editado\3rayaWin\obj\Debug\3rayaWin.exe
+C:\Users\usuario\Desktop\3rayaWin Luis Sanfiel_editado\3rayaWin\obj\Debug\3rayaWin.pdb
+C:\Users\usuario\Desktop\3rayaWin Luis Sanfiel_editado\3rayaWin\bin\Debug\3rayaWin.exe
+C:\Users\usuario\Desktop\3rayaWin Luis Sanfiel_editado\3rayaWin\bin\Debug\3rayaWin.pdb
+C:\Users\usuario\Desktop\3rayaWin Luis Sanfiel_editado\3rayaWin\obj\Debug\3rayaWin.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\3rayaWin Luis Sanfiel_editado\3rayaWin\obj\Debug\_3rayaWin.Form1.resources
+C:\Users\usuario\Desktop\3rayaWin Luis Sanfiel_editado\3rayaWin\obj\Debug\_3rayaWin.Properties.Resources.resources
+C:\Users\usuario\Desktop\3rayaWin Luis Sanfiel_editado\3rayaWin\obj\Debug\3rayaWin.csproj.GenerateResource.Cache
+D:\ProyectosVisualStudio\3rayaWin Luis Sanfiel\3rayaWin\bin\Debug\3rayaWin.exe.config
+D:\ProyectosVisualStudio\3rayaWin Luis Sanfiel\3rayaWin\obj\Debug\3rayaWin.exe
+D:\ProyectosVisualStudio\3rayaWin Luis Sanfiel\3rayaWin\obj\Debug\3rayaWin.pdb
+D:\ProyectosVisualStudio\3rayaWin Luis Sanfiel\3rayaWin\bin\Debug\3rayaWin.exe
+D:\ProyectosVisualStudio\3rayaWin Luis Sanfiel\3rayaWin\bin\Debug\3rayaWin.pdb
+D:\ProyectosVisualStudio\3rayaWin Luis Sanfiel\3rayaWin\obj\Debug\3rayaWin.csprojResolveAssemblyReference.cache
+D:\ProyectosVisualStudio\3rayaWin Luis Sanfiel\3rayaWin\obj\Debug\_3rayaWin.Form1.resources
+D:\ProyectosVisualStudio\3rayaWin Luis Sanfiel\3rayaWin\obj\Debug\_3rayaWin.Properties.Resources.resources
+D:\ProyectosVisualStudio\3rayaWin Luis Sanfiel\3rayaWin\obj\Debug\3rayaWin.csproj.GenerateResource.Cache
+D:\ProyectosVisualStudio\3rayaWin Luis Sanfiel\3rayaWin\bin\Debug\3rayaWin.XML

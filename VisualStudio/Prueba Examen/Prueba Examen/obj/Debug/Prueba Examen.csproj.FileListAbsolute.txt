@@ -1,0 +1,6 @@
+D:\ProyectosVisualStudio\Prueba Examen\Prueba Examen\bin\Debug\Prueba Examen.exe.config
+D:\ProyectosVisualStudio\Prueba Examen\Prueba Examen\obj\Debug\Prueba Examen.csprojResolveAssemblyReference.cache
+D:\ProyectosVisualStudio\Prueba Examen\Prueba Examen\bin\Debug\Prueba Examen.exe
+D:\ProyectosVisualStudio\Prueba Examen\Prueba Examen\bin\Debug\Prueba Examen.pdb
+D:\ProyectosVisualStudio\Prueba Examen\Prueba Examen\obj\Debug\Prueba Examen.exe
+D:\ProyectosVisualStudio\Prueba Examen\Prueba Examen\obj\Debug\Prueba Examen.pdb
