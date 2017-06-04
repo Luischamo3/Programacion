@@ -10,7 +10,7 @@
 namespace Proyecto1EntitiFramework {
     
     
-    public partial class WebForm1 {
+    public partial class WebFormNotas {
         
         /// <summary>
         /// Control form1.
@@ -22,103 +22,94 @@ namespace Proyecto1EntitiFramework {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Control campocurso.
+        /// Control combobox1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox campocurso;
+        protected global::System.Web.UI.WebControls.DropDownList combobox1;
         
         /// <summary>
-        /// Control campodescripcion.
+        /// Control gridView2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox campodescripcion;
+        protected global::System.Web.UI.WebControls.GridView gridView2;
         
         /// <summary>
-        /// Control campohoras.
+        /// Control Panel1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox campohoras;
+        protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// Control campotutor.
+        /// Control campocodalu.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox campotutor;
+        protected global::System.Web.UI.WebControls.TextBox campocodalu;
         
         /// <summary>
-        /// Control new.
+        /// Control note1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button @new;
+        protected global::System.Web.UI.WebControls.TextBox note1;
         
         /// <summary>
-        /// Control rec.
+        /// Control note2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button rec;
+        protected global::System.Web.UI.WebControls.TextBox note2;
         
         /// <summary>
-        /// Control Delete.
+        /// Control note3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Delete;
+        protected global::System.Web.UI.WebControls.TextBox note3;
         
         /// <summary>
-        /// Control primero.
+        /// Control savebutton.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button primero;
+        protected global::System.Web.UI.WebControls.Button savebutton;
         
         /// <summary>
-        /// Control anterior.
+        /// Control cancelbutton.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button anterior;
+        protected global::System.Web.UI.WebControls.Button cancelbutton;
         
         /// <summary>
-        /// Control siguiente.
+        /// Control deletebutton.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button siguiente;
-        
-        /// <summary>
-        /// Control ultimo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ultimo;
+        protected global::System.Web.UI.WebControls.Button deletebutton;
         
         /// <summary>
         /// Control enlaceinicio.

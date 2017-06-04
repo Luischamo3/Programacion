@@ -74,6 +74,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="WebFormAlumnos.aspx" />
+    <Content Include="WebForminicio.aspx" />
+    <Content Include="WebFormModificar.aspx" />
+    <Content Include="WebFormNotas.aspx" />
+    <Content Include="WebformNuevoAlumno.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -103,9 +108,47 @@
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebFormAlumnos.aspx.cs">
+      <DependentUpon>WebFormAlumnos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormAlumnos.aspx.designer.cs">
+      <DependentUpon>WebFormAlumnos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForminicio.aspx.cs">
+      <DependentUpon>WebForminicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForminicio.aspx.designer.cs">
+      <DependentUpon>WebForminicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormModificar.aspx.cs">
+      <DependentUpon>WebFormModificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormModificar.aspx.designer.cs">
+      <DependentUpon>WebFormModificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormNotas.aspx.cs">
+      <DependentUpon>WebFormNotas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormNotas.aspx.designer.cs">
+      <DependentUpon>WebFormNotas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebformNuevoAlumno.aspx.cs">
+      <DependentUpon>WebformNuevoAlumno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebformNuevoAlumno.aspx.designer.cs">
+      <DependentUpon>WebformNuevoAlumno.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

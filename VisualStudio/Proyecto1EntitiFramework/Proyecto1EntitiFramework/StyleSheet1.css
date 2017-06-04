@@ -3,19 +3,36 @@
     background-color: teal;
 }
 
-
-.Contenedor {
-    padding: 5px;
-    width: 50%;
-  
+form1 {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
 }
 
- .Contenedor button {
-   padding: .2em;
-   
+inicio {
+    background-color: white;
+    text-align: center;
     
 }
 
-.Contenedor label {
+h1 {
+    text-align: center;
+    margin-top: -10px;
+
+}
+
+.botones {
+    background-color: white;
+    text-decoration: none;
     
 }
+
+#newalu {
+
+    margin-top: 10px;
+
+}
+
+
+ 
+ 

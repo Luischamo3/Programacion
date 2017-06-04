@@ -9,34 +9,40 @@
 <link href="StyleSheet1.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+
+    
     <form id="form1" runat="server">
         <div class="Contenedor">
-           <!-- <asp:DropDownList id="combobox1" AutoPostBack="True" runat="server"></asp:DropDownList>
-            <asp:DropDownList id="combobox2" AutoPostBack="True" runat="server"></asp:DropDownList>
-            <asp:GridView ID="gridView1" runat="server"></asp:GridView>--> <!--Creamos el DatagridView-->
-            <!--<asp:GridView ID="gridView2" runat="server"></asp:GridView>-->
-            
-            <asp:label>Curso</asp:label>
+           <h1>Formulario Cursos</h1>
+        <aps:panel>
+            <asp:label runat="server">Curso</asp:label>
             <asp:TextBox ID="campocurso" runat="server"></asp:TextBox>
+            <br/>
             <asp:Label runat="server">Descripción</asp:Label>
             <asp:TextBox ID="campodescripcion" runat="server"></asp:TextBox>
+            <br/>
             <asp:Label  runat="server">Horas</asp:Label>
             <asp:TextBox ID="campohoras" runat="server"></asp:TextBox>
+            <br/>
             <asp:Label  runat="server">Tutor</asp:Label>
             <asp:TextBox ID="campotutor" runat="server"></asp:TextBox>
+            <br />
+         
+
              <!--Botones-->
-            <asp:Button ID="open" runat="server" Text="Abrir DBB"  />
-            <asp:Button ID="closeBDD" runat="server" Text="Cerrar BDD"  />
-            <asp:Button ID="new" runat="server" Text="Nuevo"  />
-            <asp:Button ID="rec" runat="server" Text="Graba"  />
-            <asp:Button ID="Delete" runat="server" Text="Borrar"  />
             
-            <asp:Button ID="primero" runat="server" Text="|<<"  />
-            <asp:Button ID="anterior" runat="server" Text="<<"  />
-            <asp:Button ID="siguiente" runat="server" Text=">>"  />
-            <asp:Button ID="ultimo" runat="server" Text=">>|"  />
+            <asp:Button ID="new" runat="server" Text="Nuevo" OnClick="new_OnClick" />
+            <asp:Button ID="rec" runat="server" Text="Graba" OnClick="rec_OnClick"  />
+            <asp:Button ID="Delete" runat="server" Text="Borrar" OnClick="Delete_OnClick"  />
 
-
+            <!--Botones Para Movernos Por los Registros-->
+            <asp:Button ID="primero" runat="server" Text="|<<"  OnClick="primero_OnClick"/>
+            <asp:Button ID="anterior" runat="server" Text="<<" OnClick="anterior_OnClick"  />
+            <asp:Button ID="siguiente" runat="server" Text=">>" OnClick="siguiente_OnClick"  />
+            <asp:Button ID="ultimo" runat="server" Text=">>|" OnClick="ultimo_OnClick" />
+    </aps:panel> 
+            
+            <asp:HyperLink runat="server" ID="enlaceinicio" Text="volver" NavigateUrl="~/WebForminicio.aspx" ToolTip="Volver a Inicio" ></asp:HyperLink>
 
         </div>
     </form>
