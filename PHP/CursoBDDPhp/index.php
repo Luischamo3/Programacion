@@ -11,6 +11,8 @@
 <a href="curso.php">Mantenimiento de Cursos</a> <br><br>
 <label>Notas</label>
 <a href="cursospag.php">Notas</a> <br><br>
+<label>Alumnos</label>
+<a href="Alumno.php">Notas</a> <br><br>
 </body>
 </html>
 

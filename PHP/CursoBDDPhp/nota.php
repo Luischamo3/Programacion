@@ -7,87 +7,221 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-
-
-<div>
-    <nav class="navbar navbar-fixed-top navbar-inverse">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li ><a href="curso.php">Cursos</a></li>
-                    <li><a href="Alumno.php">Alumnos</a>Alumnos</li>
-                    <li class="active"><a href="nota.php">Notas</a>Notas</li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
-<br><br><br><br><br><br>
-
 <div style="width: 80%; margin: 0 auto; ">
     <form action="" method="post" class="form-horizontal">
 
-                       <!--Combobox-->
-<div class="form-group-sm">
-        <label for="cc">Elegir Curso</label>
-        <select class="combobox" onchange="this.form.submit()" name="filtro_codcur" id="cc">
+        <div>
+            <nav class="navbar navbar-fixed-top navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
 
-            <option value="">SEleccione Curso</option>
-
-            <option value="@VAR.COD_CUR" name="box">@VAR.DESCRIPCION</option>
-
-            <script type="text/javascript">
-                $(document).ready(function () {
-                    $('.combobox').combobox();
-                });
-            </script>
-        </select>
-</div>
-                <!--Tabla Alumnos y notas-->
-
-        <table class="table">
-            <thead class="thead-inverse">
-            <tr>
-                <th></th>
-                <th>Apellidos</th>
-                <th>Nombre</th>
-                <th>Nota1</th>
-                <th>Nota2</th>
-                <th>Nota3</th>
-                <th>Media</th>
-                <th></th>
-                <th></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><a><button type="submit" class="btn btn-default" value="@n.COD_ALU" name="Modificar" id="Modificar">Modificar</button></a></td>
-
-            </tr>
-            </tbody>
-        </table>
+                    </div>
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="curso.php">Cursos</a></li>
+                            <li><a href="Alumno.php">Alumnos</a>Alumnos</li>
+                            <li class="active"><a href="nota.php">Notas</a>Notas</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <br><br><br><br><br><br>
 
 
+        <?php
+        require_once "cursos.php";
+        require_once "classnotas.php";
+        $posi = 0;
+        $cod_cur = "";
+        $cod_alu = "";
+        $apellidos = "";
+        $nombre = "";
+        $nota1 = 0;
+        $nota2 = 0;
+        $nota3 = 0;
+        $media="";
+        $_LOCALPOST = filter_input_array(INPUT_POST);
+        session_start();
+        $cursos = new cursos();
+        $notas = new classnotas();
+        $consulta = $cursos->listar(0, 100);
+        //        $consulta2 = $notas->listar($cod_cur1);
+        $_SESSION['tamaño'] = $consulta->num_rows - 1;
+        // $consulta->close();
+
+        //$_SESSION['tamaño'] = $consulta->num_rows - 1;
+        $_SESSION["cursoactual"] = $_LOCALPOST["cursobox"];
+
+
+
+
+
+        ?>
+
+        <!--Combobox-->
+        <div class='form-group-sm'>
+            <label for='cc'>Elegir Curso</label>
+            <select class='combobox' name='cursobox' id='cursobox' onchange="this.form.submit()">
+
+                <option value=''>Seleccione Curso</option>
+                <?php
+                $cursos = new cursos();
+                $consulta = $cursos->listar(0, PHP_INT_MAX);
+
+                while ($value = $consulta->fetch_array(MYSQL_ASSOC)) {
+                    $cod_cur = $value["cod_cur"];
+                    $desc = $value["descripcion"];
+                    if ($cod_cur == $_SESSION["cursoactual"]) {
+                        echo "<option value='$cod_cur' selected='selected'> $desc</option>";
+                    } else {
+                        echo "<option value='$cod_cur' > $desc</option>";
+                    }
+                }
+                ?>
+
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $('.combobox').combobox()
+                    })
+                </script>
+                -->
+            </select>
+        </div>
+
+        <!--Tabla Alumnos y notas-->
+
+
+        <?php
+        $cod_cur1 = "";
+        $cod_cur1 = $_LOCALPOST["cursobox"];
+
+        $consulta2 = $notas->listar($cod_cur1);
+        echo "<br><br><br><br><br>";
+        echo "<table class='table'>";
+        echo "<thead class='thead-inverse'>";
+
+        echo "<tr>";
+        echo " <th>Codigo Alu</th>";
+        echo " <th>Codigo Cur</th>";
+        echo "<th>Apellidos</th>";
+        echo "<th>Nombre</th>";
+        echo "<th>Nota1</th>";
+        echo "<th>Nota2</th>";
+        echo "<th>Nota3</th>";
+        echo "<th>Media</th>";
+        echo "<th></th>";
+
+        echo "</tr>";
+        echo "</thead>";
+        echo "<tbody>";
+
+        while ($fila = $notas->lee($consulta2)) {
+            echo "<tr>";
+            echo "<td>$fila[0]</td>";
+            echo "<td>$fila[1]</td>";
+            echo "<td>$fila[2]</td>";
+            echo "<td>$fila[3]</td>";
+            echo "<td>$fila[4]</td>";
+            echo "<td>$fila[5]</td>";
+            echo "<td>$fila[6]</td>";
+            echo "<td>$fila[7]</td>";
+            echo "<td><a><button type='submit' class='btn btn-warning' value='$fila[0]' name='modificar' id='modificar'>Modificar</button></a></td>";
+
+            echo "</tr>";
+        }
+        echo "</tbody>";
+        echo "</table>";
+
+        if (isset($_LOCALPOST['modificar'])) {
+
+            $acodalu = "";
+            $acodalu = $_LOCALPOST["modificar"];
+            $consulta = $notas->listaralumno($acodalu,$posi,1);
+            $fila = $notas->lee($consulta);
+            $cod_alu = $fila[0];
+             $cod_cur = $fila[1];
+            $apellidos = $fila[2];
+            $nombre = $fila[3];
+            $nota1 = $fila[4];
+            $nota2 = $fila[5];
+            $nota3 = $fila[6];
+            $media = $fila[7];
+
+
+            $_SESSION["posi"] = $posi;
+
+
+        ?>
+
+
+            <div class="panel-heading">
+            <div class="panel-body">
+                <div class="form-group">
+                <label for="ca" class="control-label">codalu: </label>
+                <input value="<?php echo $cod_alu ?>" name="campocodalu" id="campocodalu" readonly="readonly">
+
+                    <label for="ca" class="control-label">codcur: </label>
+                    <input value="<?php echo $cod_cur ?>" name="campocodcur" id="campocodcur" readonly="readonly">
+
+                <label for="ape" class="control-label">apellidos: </label>
+                <input value="<?php echo $apellidos ?>" name="campoapellido" id="campoapellido" readonly="readonly">
+
+                <label for="nom">nombre: </label>
+                <input value="<?php echo $nombre ?>" name="camponombre" id="camponombre" type="text" readonly="readonly">
+                </div>
+            </div>
+                <div class="panel-body">
+                <div class="form-group">
+                <label for="nota1">nota1: </label>
+                <input value="<?php echo $nota1 ?>" name="nota1" id="nota1" type="text">
+
+                <label for="nota2">nota2:</label>
+                <input value="<?php echo $nota2 ?>" name="nota2" id="nota2" type="text">
+
+                <label for="nota3">nota3: </label>
+                <input value="<?php echo $nota3 ?>" name="nota3" id="nota3" type="text">
+
+
+                <label for="media">Media: </label>
+                <input value="<?php echo $media ?>" name="media" id="media" type="text">
+                </div>
+
+                <button type="submit" name="guardar" id="guardar" class="btn btn-warning" title="Modifcar Una Nota">guardar </button>
+                <button type="submit" name="cancelar" id="cancelar" class="btn btn-info">cancelar</button>
+            </div>
+            </div>
+
+        <?php
+            if (isset($_LOCALPOST['guardar'])) {
+                $cod_alu = $_LOCALPOST["campocodalu"];
+                $cod_cur = $_LOCALPOST["campocodcur"];
+                $apellidos = $_LOCALPOST["campoapellido"];
+                $nombre = $_LOCALPOST["camponombre"];
+                $nota1 = $_LOCALPOST["nota1"];
+                $nota2 = $_LOCALPOST["nota2"];
+                $nota3 = $_LOCALPOST["nota3"];
+                $media = $_LOCALPOST["media"];
+
+                $codalu = $_LOCALPOST["modificar"];
+                $notas->modifcar($codalu);
+                header("Location:Alumno.php");
+            }
+
+
+//            $consulta->close();
+        }
+?>
 
     </form>
 </div>
-
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
@@ -96,10 +230,3 @@
 </html>
 
 
-<?php
-/**
- * Created by PhpStorm.
- * User: Luis
- * Date: 02/06/2017
- * Time: 10:37
- */
