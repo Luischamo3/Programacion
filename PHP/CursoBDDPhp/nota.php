@@ -62,8 +62,6 @@
 
 
 
-
-
         ?>
 
         <!--Combobox-->
@@ -142,83 +140,20 @@
 
         if (isset($_LOCALPOST['modificar'])) {
 
-            $acodalu = "";
-            $acodalu = $_LOCALPOST["modificar"];
-            $consulta = $notas->listaralumno($acodalu,$posi,1);
-            $fila = $notas->lee($consulta);
-            $cod_alu = $fila[0];
-             $cod_cur = $fila[1];
-            $apellidos = $fila[2];
-            $nombre = $fila[3];
-            $nota1 = $fila[4];
-            $nota2 = $fila[5];
-            $nota3 = $fila[6];
-            $media = $fila[7];
-
-
-            $_SESSION["posi"] = $posi;
-
+//
+            $_SESSION["codalu"] = $_LOCALPOST["modificar"];
+            header("Location:Modificarnota.php");
+        }
+//        $consulta->close();
 
         ?>
 
 
-            <div class="panel-heading">
-            <div class="panel-body">
-                <div class="form-group">
-                <label for="ca" class="control-label">codalu: </label>
-                <input value="<?php echo $cod_alu ?>" name="campocodalu" id="campocodalu" readonly="readonly">
-
-                    <label for="ca" class="control-label">codcur: </label>
-                    <input value="<?php echo $cod_cur ?>" name="campocodcur" id="campocodcur" readonly="readonly">
-
-                <label for="ape" class="control-label">apellidos: </label>
-                <input value="<?php echo $apellidos ?>" name="campoapellido" id="campoapellido" readonly="readonly">
-
-                <label for="nom">nombre: </label>
-                <input value="<?php echo $nombre ?>" name="camponombre" id="camponombre" type="text" readonly="readonly">
-                </div>
-            </div>
-                <div class="panel-body">
-                <div class="form-group">
-                <label for="nota1">nota1: </label>
-                <input value="<?php echo $nota1 ?>" name="nota1" id="nota1" type="text">
-
-                <label for="nota2">nota2:</label>
-                <input value="<?php echo $nota2 ?>" name="nota2" id="nota2" type="text">
-
-                <label for="nota3">nota3: </label>
-                <input value="<?php echo $nota3 ?>" name="nota3" id="nota3" type="text">
 
 
-                <label for="media">Media: </label>
-                <input value="<?php echo $media ?>" name="media" id="media" type="text">
-                </div>
-
-                <button type="submit" name="guardar" id="guardar" class="btn btn-warning" title="Modifcar Una Nota">guardar </button>
-                <button type="submit" name="cancelar" id="cancelar" class="btn btn-info">cancelar</button>
-            </div>
-            </div>
-
-        <?php
-            if (isset($_LOCALPOST['guardar'])) {
-                $cod_alu = $_LOCALPOST["campocodalu"];
-                $cod_cur = $_LOCALPOST["campocodcur"];
-                $apellidos = $_LOCALPOST["campoapellido"];
-                $nombre = $_LOCALPOST["camponombre"];
-                $nota1 = $_LOCALPOST["nota1"];
-                $nota2 = $_LOCALPOST["nota2"];
-                $nota3 = $_LOCALPOST["nota3"];
-                $media = $_LOCALPOST["media"];
-
-                $codalu = $_LOCALPOST["modificar"];
-                $notas->modifcar($codalu);
-                header("Location:Alumno.php");
-            }
 
 
-//            $consulta->close();
-        }
-?>
+
 
     </form>
 </div>

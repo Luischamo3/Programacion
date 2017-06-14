@@ -46,10 +46,10 @@ class classnotas extends BDD
         }
     }
 
-    public function modifcar($cod_cur, $cod_alu, $nota1, $nota2, $nota3 , $media)
+    public function modifcar( $cod_alu, $cod_cur, $nota1, $nota2, $nota3 , $media)
     {
-        $query = "update notas set nota= %d, nota1=%d,nota2=%d nota3=%d media=%d where cod_alu = '%s'";
-        $query=sprintf($query,$nota1,$nota2,$nota3,$media,$cod_alu);
+        $query = "update notas set nota= %d, cod_alu='%s',nota1=%d,nota2=%d nota3=%d media=%d where cod_alu = '%s'";
+        $query=sprintf($query,$nota1,$nota2,$nota3,$media,$cod_cur,$cod_alu);
         $comprobacion = $this->_db->query($query);
 
         if(!$comprobacion)
